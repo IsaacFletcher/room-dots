@@ -20,8 +20,6 @@ mkdir -p ~/.local/bin
 
 mkdir -p ~/Pictures/Wallpapers/
 
-mkdir -p ~/room-dots/backup/.local/bin/
-
 mkdir -p ~/room-dots/backup/.local/share/bin/
 
 mkdir -p ~/room-dots/backup/.config/
@@ -30,9 +28,7 @@ mkdir -p ~/room-dots/backup/Pictures/Wallpapers/
 
 # Backup existing data
 
-cp -r ~/.local/share/bin ~/room-dots/backup/.local/share/bin
-
-cp -r ~/.local/bin ~/room-dots/backup/.local/bin
+cp -r ~/.local/share/bin/* ~/room-dots/backup/.local/share/bin
 
 cp -r ~/.config ~/room-dots/backup/.config
 
@@ -42,10 +38,9 @@ cp -r ~/Pictures/Wallpapers ~/room-dots/backup/Pictures/Wallpapers
 
 cp -r ~/room-dots/.config/ ~/.config
 
-cp -r ~/room-dots/.local/share/bin ~/.local/share/bin
+cp -r ~/room-dots/.local/share/bin/* ~/.local/share/bin
 
-cp -r ~/room-dots/.local/bin ~/.local/bin
-
+cp -r ~/room-dots/.cache/wal ~/.cache/
 
 echo "Installing optional packages..."
 sudo pacman -S keepassxc nvim
