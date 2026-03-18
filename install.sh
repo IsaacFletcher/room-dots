@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo pacman -S git base-devel hyprland alacritty xdg-desktop-portal-hyprland waybar swaync rofi qt6ct qt5ct dolphin kvantum cliphist
+sudo pacman -S sddm git base-devel hyprland alacritty xdg-desktop-portal-hyprland waybar swaync rofi qt6ct qt5ct dolphin kvantum cliphist
 
 if pacman -Qi "paru" > /dev/null; then
   echo "Creating Directories"
