@@ -2,6 +2,7 @@
 
 sudo pacman -S python-pywal sddm git base-devel hyprland alacritty xdg-desktop-portal-hyprland waybar swaync rofi qt6ct qt5ct dolphin kvantum cliphist
 
+sudo systemctl enable sddm
 if pacman -Qi "paru" > /dev/null; then
   echo "Creating Directories"
 else
@@ -53,3 +54,7 @@ git clone https://github.com/NvChad/starter ~/.config/nvim
 
 echo "Run nvim and then do :MasonInstallAll and :TSInstallAll"
 echo "Delete the .git directory from .config/nvim"
+
+~/.local/share/bin/wallpaper-picker.sh ~/Pictures/Wallpapers/neon.png
+
+sudo systemctl restart sddm
