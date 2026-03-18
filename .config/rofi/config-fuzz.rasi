@@ -1,0 +1,80 @@
+configuration {
+    /* Enable fuzzy finding */
+    matching: "fuzzy";
+    show-icons: true;
+    font: "JetBrainsMono Nerd Font 12";
+    drun-display-format: "{name}";
+}
+
+/* Import the Pywal colors */
+@import "~/.cache/wal/colors-rofi-dark.rasi"
+
+window {
+    background-color: #000000;
+    border: 3px;
+    border-color: @active-background;
+    border-radius: 8px;
+    width: 600px; /* Wider for app names */
+    padding: 20px;
+}
+
+mainbox {
+    background-color: transparent;
+    children: [ "inputbar", "listview" ];
+}
+
+/* --- Input Bar / Search Bar --- */
+inputbar {
+    background-color: #0c0c13;
+    text-color: @foreground;
+    children: [ "prompt", "entry" ];
+    margin: 0 0 15px 0;
+    border: 1px;
+    border-color: #333333;
+    border-radius: 6px;
+}
+
+prompt {
+    background-color: @active-background;
+    text-color: #000000;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font: "JetBrainsMono Nerd Font Bold 12";
+}
+
+entry {
+    background-color: transparent;
+    text-color: @foreground;
+    placeholder: " Search Apps...";
+    placeholder-color: @foreground;
+    padding: 10px;
+    vertical-align: 0.5;
+}
+
+/* --- List View --- */
+listview {
+    background-color: transparent;
+    columns: 1;
+    lines: 8; /* Show more apps for fuzzy finding */
+    spacing: 5px;
+    border: 0;
+    scrollbar: false;
+}
+
+element {
+    background-color: transparent;
+    text-color: @foreground;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+element selected {
+    background-color: @selected-normal-background;
+    text-color: #000000;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+    font: "JetBrainsMono Nerd Font Bold 11";
+}

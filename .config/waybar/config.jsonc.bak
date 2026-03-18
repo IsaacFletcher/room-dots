@@ -1,0 +1,46 @@
+{
+    "layer": "top",
+    "position": "top",
+    "margin-top": 5,
+    "margin-bottom": 0,
+    "spacing": 4,
+
+    "modules-left": ["hyprland/workspaces", "hyprland/window"],
+    "modules-center": ["clock"],
+    "modules-right": ["cpu", "memory", "tray"],
+
+    "hyprland/window": {
+        "format": " {title} ",
+        "max-length": 25,
+        "rewrite": {
+            "": " 󰣇 Arch Linux ",
+            "(.*) — Mozilla Firefox": " 󰈹 Firefox ",
+            "(.*) - Ghostty": " 󰊠 Terminal ",
+            "(.*) - Discord": "  Discord "
+        }
+    },
+
+    "clock": {
+        "format": "󱑊  {:%d.%m  %H:%M}",
+        "format-alt": "󰃭  {:%d.%m}",
+        "tooltip-format": "<tt>{calendar}</tt>"
+    },
+
+    "cpu": {
+        "interval": 5,
+        "format": "  {usage}%"
+    },
+
+    "memory": {
+        "interval": 5,
+        "format": "  {percentage}%",
+        "format-alt": "  {used:0.1f}G / {total:0.1f}G",
+        "tooltip": true,
+        "tooltip-format": "Swap: {swapPercentage}% ({swapUsed:0.1f}G)"
+    },
+
+    "tray": {
+        "icon-size": 22,
+        "spacing": 12
+    }
+}

@@ -1,0 +1,132 @@
+{
+    "reload_style_on_change": true,
+    "layer": "top",
+    "position": "top",
+    "height": 38,
+    "margin-top": 8,
+    "margin-left": 10,
+    "margin-right": 10,
+    "spacing": 2,
+
+    // --- Module Layout ---
+    "modules-left": [
+        "custom/launcher",
+        "hyprland/workspaces",
+        "hyprland/window"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "cpu",
+        "memory",
+        "tray",
+        "pulseaudio",
+        "hyprland/language",
+        "custom/swaync"
+    ],
+
+    // --- Left Section ---
+
+    "custom/launcher": {
+        "format": "󰣇",
+        "on-click": "rofi -show drun -config /home/isaac/.config/rofi/config-fuzz.rasi",
+        "tooltip": false
+    },
+
+    "hyprland/workspaces": {
+        "active-only": false,
+        "all-outputs": true,
+        "disable-scroll": true,
+        "format": "{icon}",
+        "on-click": "activate",
+        "format-icons": {
+            "active": "󱓻",
+            "default": "◦",
+            "urgent": "󱓻"
+        }
+    },
+
+    "hyprland/language": {
+        "format": "{short}"
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "󰝟 MUTE",
+        "format-icons": {
+            "default": ["󰕿", "󰖀", "󰕾"]
+        },
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "on-click-right": "pavucontrol",
+        "scroll-step": 5,
+        "tooltip": false
+    },
+
+    "hyprland/window": {
+        "format": " {class} ",
+        "separate-outputs": true,
+        "rewrite": {
+            "": "󰣇 ARCH",
+            "firefox": "󰈹 FIREFOX",
+            "ghostty": "󰊠 GHOSTTY",
+            "discord": " DISCORD",
+            "telegram":"Telegram",
+            "code": "󰨞 VS CODE",
+            "org.kde.dolphin": "󱓷 FILES",
+            "spotify": " MUSIC"
+        },
+        "max-length": 20
+    },
+
+    // --- Center Section ---
+
+    "clock": {
+        "format": "󱑊 {:%H:%M}",
+        "on-click": "~/.local/share/bin/wal-calendar" // This opens the popup calendar
+
+    },
+       
+    // --- Right Section ---
+    "custom/swaync": {
+    "tooltip": false,
+    "format": "{icon}",
+    "format-icons": {
+        "none":                  "󰂜",
+        "notification":          "󰂚<sup>{}</sup>",
+        "dnd-none":              "󰂛",
+        "dnd-notification":      "󰂛<sup>{}</sup>",
+        "inhibited-none":        "󰂜",
+        "inhibited-notification":"󰂚<sup>{}</sup>",
+        "dnd-inhibited-none":    "󰂛",
+        "dnd-inhibited-notification": "󰂛<sup>{}</sup>"
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+},
+
+    "cpu": {
+        "interval": 5,
+        "format": " {usage}%",
+        "max-length": 10
+    },
+
+    "memory": {
+        "interval": 5,
+        "format": " {percentage}%",
+        "format-alt": " {used:0.1f}G",
+        "tooltip": true,
+        "tooltip-format": "RAM: {used:0.1f}G / {total:0.1f}G\nSWAP: {swapUsed:0.1f}G / {swapTotal:0.1f}G",
+        "on-click-right": "ghostty -e btop"
+    },
+
+    "tray": {
+        "icon-size": 20,
+        "spacing": 12
+    }
+}
+
+

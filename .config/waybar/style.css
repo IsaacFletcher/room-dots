@@ -1,0 +1,173 @@
+@import "../../.cache/wal/colors-waybar.css";
+
+* {
+    font-family: 'JetBrainsMono Nerd Font', 'CaskaydiaMono Nerd Font';
+    font-size: 13px;
+    font-weight: 900; /* Maximum thickness for sharp glyphs */
+}
+
+window#waybar {
+    background: transparent;
+}
+
+/* --- THE SHARP PILL DESIGN --- */
+#custom-launcher,
+#workspaces,
+#window,
+#clock,
+#cpu,
+#memory,
+#language,
+#pulseaudio,
+#network,
+#tray {
+    background-color: #000000; /* Pure black for maximum contrast */
+    color: #ffffff;            /* Pure white text */
+    border: 2px solid @color3; /* Thick vibrant accent border */
+    border-radius: 6px;        /* Slightly sharper corners for a modern feel */
+    padding: 2px 14px;
+    margin: 4px 4px;
+    /* Hard drop shadow (no blur) for a "cut-out" look */
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.6); 
+}
+
+/* Launcher Icon */
+#custom-launcher {
+    color: @color3;
+    font-size: 16px;
+}
+
+#pulseaudio {
+    color: @color5;
+    border-color: @color5;
+    background-color: #000000;
+    border: 2px solid @color5;
+    border-radius: 6px;
+    padding: 2px 12px;
+    margin: 4px 4px;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.6);
+    font-weight: 900;
+}
+
+#pulseaudio.muted {
+    color: #ff5555; /* Sharp red when muted */
+    border-color: #ff5555;
+}
+
+#language {
+    color: @color4; /* Distinct sharp color */
+    border-color: @color4;
+    background-color: #000000;
+    border: 2px solid @color4;
+    border-radius: 6px;
+    padding: 2px 12px;
+    margin: 4px 4px;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.6);
+    font-weight: 900;
+}
+
+/* --- Left Section --- */
+#workspaces button {
+    color: #444444; /* Dim inactive icons significantly */
+    padding: 0 4px;
+}
+
+#workspaces button.active {
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff; /* Sharp underline for active workspace */
+}
+
+#window {
+    border-color: @color5;
+    color: @color5;
+    background-color: alpha(@color5, 0.1); /* Subtle tint for the window pill */
+}
+
+/* --- Center Section (THE CLOCK) --- */
+/* This is the highest contrast element: Black text on White/Accent background */
+#clock {
+    background-color: #ffffff; /* White background */
+    color: #000000;            /* Black text */
+    border: 2px solid @color3;
+    font-size: 15px;
+}
+
+/* --- Right Section (Color Coding) --- */
+#cpu { 
+    color: @color1; 
+    border-color: @color1; 
+}
+
+#memory { 
+    color: @color2; 
+    border-color: @color2; 
+}
+
+#network { 
+    color: @color4; 
+    border-color: @color4; 
+}
+/* swaync bell — same sharp pill as every other right-section module */
+#custom-swaync {
+    background-color: #000000;
+    color: @color3;
+    border: 2px solid @color3;
+    border-radius: 6px;
+    padding: 2px 14px;
+    margin: 4px 4px;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.6);
+    font-size: 15px;
+    font-weight: 900;
+}
+ 
+/* DND active — dim to match muted/inactive style */
+#custom-swaync.dnd-none,
+#custom-swaync.dnd-notification,
+#custom-swaync.dnd-inhibited-none,
+#custom-swaync.dnd-inhibited-notification {
+    color: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: none;
+}
+ 
+ 
+/* ============================================================
+   MPRIS MEDIA PILL (optional waybar module)
+   Add "custom/mpris" to modules-right if you want a persistent
+   now-playing pill in waybar with a seek bar.
+   This complements swaync's MPRIS widget (which has no seek bar).
+   ============================================================ */
+ 
+#custom-mpris {
+    background-color: #000000;
+    color: @color5;
+    border: 2px solid @color5;
+    border-radius: 6px;
+    padding: 2px 14px;
+    margin: 4px 4px;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    font-weight: 900;
+}
+
+
+/* Tray area contrast */
+#tray {
+    background-color: #000000;
+    border: 2px solid #ffffff; /* Sharp white border to see it clearly */
+    border-radius: 6px;
+    margin: 4px 4px;
+    padding: 0 10px;
+}
+
+/* --- Calendar / Tooltip Sharpness --- */
+tooltip {
+    background: #000000;
+    border: 3px solid @color3;
+    border-radius: 4px;
+}
+
+tooltip label {
+    color: #ffffff;
+    text-shadow: none;
+}

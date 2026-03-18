@@ -1,0 +1,78 @@
+@import "../../.cache/wal/colors-waybar.css";
+
+* {
+    font-family: 'CaskaydiaMono Nerd Font Propo', sans-serif;
+    font-size: 13px;
+    font-weight: 800; /* Extra bold for sharper text */
+}
+
+window#waybar {
+    background: transparent;
+}
+
+/* The "Sharp Island" Style */
+#workspaces,
+#window,
+#clock,
+#cpu,
+#memory,
+#network,
+#tray {
+    /* Using a very dark background for punchy contrast */
+    background-color: #11111b; 
+    color: @foreground;
+    border-radius: 8px; /* Slightly sharper corners than 12px */
+    padding: 2px 16px;
+    margin: 6px 4px;
+    /* Thicker, high-visibility border using wallpaper accent */
+    border: 2px solid @color3; 
+    /* Sharp shadow for depth */
+    box-shadow: 0 4px 0px 0px rgba(0,0,0,0.5); 
+}
+
+/* --- Left Section --- */
+#workspaces button {
+    color: alpha(@foreground, 0.4);
+    padding: 0 6px;
+}
+
+#workspaces button.active {
+    color: @color3;
+    background: alpha(@color3, 0.2);
+    border-radius: 4px;
+}
+
+#window {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    color: @color5;
+}
+
+/* --- Center Section (The Clock) --- */
+#clock {
+    color: #ffffff;
+    background-color: @color3; /* Invert the clock for maximum focus */
+    border: 2px solid #ffffff;
+}
+
+/* --- Right Section (Vibrant Accents) --- */
+#cpu { 
+    color: @color1; 
+    border-color: @color1;
+}
+
+#memory { 
+    color: @color2; 
+    border-color: @color2;
+}
+
+#network { 
+    color: @color6; 
+    border-color: @color6;
+}
+
+/* Tray needs a standard look but matching border */
+#tray {
+    border-color: alpha(@foreground, 0.3);
+}

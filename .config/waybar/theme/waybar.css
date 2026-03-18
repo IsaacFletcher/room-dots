@@ -1,0 +1,67 @@
+/* Import the dynamically generated colors from Pywal */
+@import "../../.cache/wal/colors-waybar.css";
+
+/* Pywal provides variables like:
+   @background, @foreground, @color1, @color2, etc.
+*/
+
+* {
+    font-family: "CaskaydiaMono Nerd Font Propo", "JetBrainsMono Nerd Font";
+    font-size: 14px;
+    border: none;
+    border-radius: 0;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+window#waybar > box {
+    /* Uses dynamic background with 80% opacity */
+    background-color: alpha(@background, 0.8);
+    margin: 5px 10px;
+    border-radius: 12px;
+    border: 1px solid alpha(@foreground, 0.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+/* --- Dynamic Modules --- */
+#workspaces button {
+    color: @foreground;
+    padding: 0 5px;
+}
+
+#workspaces button.active {
+    color: @color3; /* Dynamic accent */
+    background: alpha(@foreground, 0.1);
+    border-bottom: 2px solid @color3;
+}
+
+#clock {
+    color: @color4;
+    font-weight: bold;
+}
+
+#cpu { color: @color1; }
+#memory { color: @color2; }
+#pulseaudio { color: @color5; }
+#network { color: @color6; }
+
+#battery.charging {
+    color: #a6e3a1; /* Keep charging green for clarity */
+}
+
+#battery.critical {
+    color: @color1; /* Usually the 'red' or 'darkest' accent from wal */
+    animation: blink 0.5s infinite alternate;
+}
+
+@keyframes blink {
+    to { opacity: 0.5; }
+}
+
+/* Tooltips */
+tooltip {
+    background: @background;
+    border: 1px solid @color3;
+}

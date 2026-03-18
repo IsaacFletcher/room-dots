@@ -1,0 +1,64 @@
+configuration {
+    show-icons: false;
+    font: "JetBrainsMono Nerd Font 12";
+}
+
+/* 1. Import your specific Pywal file */
+@import "~/.cache/wal/colors-rofi-dark.rasi"
+
+/* 2. Apply high-contrast overrides using the variables from your cat output */
+window {
+    background-color: #000000; /* Pure black */
+    border: 3px;
+    border-color: @active-background; /* Using the variable from your output */
+    border-radius: 8px;
+    width: 400px;
+    padding: 20px;
+}
+
+mainbox {
+    background-color: transparent;
+    children: [ "inputbar", "listview" ];
+}
+
+inputbar {
+    background-color: transparent;
+    text-color: @foreground;
+    children: [ "prompt" ];
+    margin: 0 0 15px 0;
+}
+
+prompt {
+    background-color: @active-background; /* Vibrant accent from Pywal */
+    text-color: #000000; /* Black text for high contrast */
+    padding: 8px 12px;
+    border-radius: 4px;
+    font: "JetBrainsMono Nerd Font Bold 12";
+}
+
+listview {
+    background-color: transparent;
+    columns: 1;
+    lines: 5;
+    spacing: 8px;
+    border: 0; /* Removing the default border from your cat output */
+}
+
+element {
+    background-color: #0c0c13; /* Darker tile */
+    text-color: @foreground;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+element selected {
+    /* Using your selected-normal-background from the output */
+    background-color: @selected-normal-background; 
+    text-color: #000000;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+    font: "JetBrainsMono Nerd Font Bold 11";
+}

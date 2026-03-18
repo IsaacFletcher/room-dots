@@ -1,0 +1,418 @@
+/* ============================================================
+   swaync/style.css  (fixed)
+   Key fix: `all: unset` is scoped to swaync's own CSS classes
+   only — never applied globally. GtkCalendar needs its GTK4
+   internal layout intact to render the day grid.
+   ============================================================ */
+
+@import "../../.cache/wal/colors-waybar.css";
+
+/* --- Base font for swaync's own elements only --- */
+.notification,
+.notification *,
+.control-center,
+.control-center-list,
+.widget-title,
+.widget-title *,
+.widget-dnd,
+.widget-dnd > label,
+.widget-mpris,
+.widget-mpris *,
+.widget-calendar,
+.notification-action,
+.notification-default-action,
+.close-button {
+  font-family: 'JetBrainsMono Nerd Font', 'CaskaydiaMono Nerd Font', monospace;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+/* ============================================================
+   NOTIFICATION POPUP WINDOW
+   ============================================================ */
+
+.notification-row {
+  outline: none;
+  padding: 0;
+  margin: 4px 0;
+}
+
+.notification {
+  background-color: #000000;
+  color: #ffffff;
+  border: 2px solid @color3;
+  border-radius: 6px;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.6);
+  margin: 4px 8px;
+  padding: 0;
+  min-width: 330px;
+}
+
+.notification.critical {
+  border-color: #ff5555;
+  box-shadow: 3px 3px 0px 0px rgba(255, 85, 85, 0.35);
+}
+
+.notification.low {
+  border-color: @color1;
+  opacity: 0.9;
+}
+
+.notification-default-action {
+  background: transparent;
+  border-radius: 4px;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.notification-default-action:hover {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.notification-content {
+  padding: 12px 14px;
+}
+
+.image {
+  border-radius: 4px;
+  min-width: 48px;
+  min-height: 48px;
+  margin-right: 10px;
+}
+
+.app-name {
+  color: @color3;
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.time {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.summary {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 13px;
+}
+
+.body {
+  color: rgba(255, 255, 255, 0.72);
+  font-weight: 400;
+  font-size: 12px;
+}
+
+progress,
+progress trough,
+progress bar {
+  border-radius: 3px;
+  min-height: 4px;
+}
+
+progress trough {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+progress bar {
+  background-color: @color3;
+}
+
+.close-button {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.35);
+  border: none;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: 900;
+  min-width: 0;
+  min-height: 0;
+  margin: 4px 4px 0 0;
+}
+
+.close-button:hover {
+  background-color: #ff5555;
+  color: #ffffff;
+}
+
+.notification-action {
+  background-color: #000000;
+  color: @color3;
+  border: 2px solid @color3;
+  border-radius: 4px;
+  margin: 2px 4px 6px 4px;
+  padding: 4px 12px;
+  font-weight: 900;
+  font-size: 12px;
+  box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.6);
+}
+
+.notification-action:hover {
+  background-color: @color3;
+  color: #000000;
+}
+
+/* ============================================================
+   CONTROL CENTER PANEL
+   ============================================================ */
+
+.control-center {
+  background-color: #000000;
+  border: 2px solid @color3;
+  border-radius: 6px;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.6);
+  padding: 6px;
+  margin: 0;
+}
+
+.control-center-list {
+  background-color: transparent;
+}
+
+.control-center-list-placeholder {
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 12px;
+  font-weight: 400;
+  padding: 20px;
+}
+
+.control-center .notification-row .notification {
+  margin: 3px 2px;
+}
+
+/* ============================================================
+   TITLE WIDGET
+   ============================================================ */
+
+.widget-title {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 900;
+  padding: 6px 10px 8px 10px;
+  border-bottom: 2px solid @color3;
+  margin-bottom: 6px;
+}
+
+.widget-title > label {
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.widget-title > button {
+  all: unset;
+  background-color: #000000;
+  color: @color3;
+  border: 2px solid @color3;
+  border-radius: 6px;
+  padding: 2px 10px;
+  font-family: 'JetBrainsMono Nerd Font', monospace;
+  font-size: 11px;
+  font-weight: 900;
+  box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.6);
+}
+
+.widget-title > button:hover {
+  background-color: @color3;
+  color: #000000;
+}
+
+/* ============================================================
+   DND TOGGLE WIDGET
+   ============================================================ */
+
+.widget-dnd {
+  background-color: #000000;
+  border: 2px solid @color4;
+  border-radius: 6px;
+  box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.6);
+  padding: 6px 10px;
+  margin: 4px 0;
+}
+
+.widget-dnd > label {
+  color: @color4;
+  font-weight: 900;
+}
+
+.widget-dnd > switch {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 2px solid @color4;
+  border-radius: 12px;
+  min-width: 42px;
+  min-height: 22px;
+}
+
+.widget-dnd > switch:checked {
+  background-color: @color4;
+}
+
+.widget-dnd > switch > slider {
+  background-color: #ffffff;
+  border-radius: 50%;
+  min-width: 16px;
+  min-height: 16px;
+  margin: 2px;
+}
+
+/* ============================================================
+   MPRIS MEDIA PLAYER WIDGET
+   ============================================================ */
+
+.widget-mpris {
+  background-color: #000000;
+  border: 2px solid @color5;
+  border-radius: 6px;
+  box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.6);
+  padding: 8px;
+  margin: 4px 0;
+}
+
+.widget-mpris-album-art {
+  border-radius: 4px;
+  min-width: 64px;
+  min-height: 64px;
+  margin-right: 10px;
+}
+
+.widget-mpris-title {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 13px;
+}
+
+.widget-mpris-subtitle {
+  color: @color5;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.widget-mpris-player > box > button {
+  all: unset;
+  background-color: #000000;
+  color: @color5;
+  border: 2px solid @color5;
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 15px;
+  box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.6);
+  margin: 2px;
+}
+
+.widget-mpris-player > box > button:hover {
+  background-color: @color5;
+  color: #000000;
+}
+
+/* ============================================================
+   CALENDAR WIDGET
+   ============================================================
+   
+   GtkCalendar in GTK4 renders its own internal grid — we must
+   NOT use `all: unset` on calendar/* or the grid collapses.
+   We style only what GTK4 exposes safely.
+   ============================================================ */
+
+.widget-calendar {
+  background-color: #000000;
+  border: 2px solid @color4;
+  border-radius: 6px;
+  box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.6);
+  padding: 4px;
+  margin: 4px 0;
+}
+
+/* The calendar widget node itself */
+calendar {
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 4px;
+  font-family: 'JetBrainsMono Nerd Font', monospace;
+  font-size: 12px;
+}
+
+/* Navigation header (month + year + arrows) — GTK4 uses "header" */
+calendar > header {
+  background-color: #000000;
+  padding: 2px 0 6px 0;
+}
+
+calendar > header > label {
+  color: @color4;
+  font-weight: 900;
+  font-size: 13px;
+  font-family: 'JetBrainsMono Nerd Font', monospace;
+}
+
+/* Prev/Next arrows are .flat buttons inside header */
+calendar > header > button {
+  background-color: transparent;
+  color: @color4;
+  border: none;
+  border-radius: 4px;
+  padding: 2px 6px;
+  min-width: 0;
+}
+
+calendar > header > button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Weekday name row (Mon Tue Wed …) */
+calendar > grid > label.header {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 11px;
+  font-weight: 900;
+  padding-bottom: 4px;
+}
+
+/* Day number cells */
+calendar > grid > label {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 12px;
+  border-radius: 4px;
+  padding: 3px 5px;
+}
+
+calendar > grid > label:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Today */
+calendar > grid > label.today {
+  color: @color3;
+  font-weight: 900;
+  border-bottom: 2px solid @color3;
+}
+
+/* Selected day */
+calendar > grid > label:selected,
+calendar > grid > label.selected {
+  background-color: @color3;
+  color: #000000;
+  font-weight: 900;
+}
+
+/* Days from adjacent months */
+calendar > grid > label.other-month {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+/* ============================================================
+   SCROLLBAR (hidden)
+   ============================================================ */
+
+scrollbar {
+  opacity: 0;
+  min-width: 0;
+  min-height: 0;
+}
+
+scrollbar slider {
+  opacity: 0;
+  min-width: 0;
+  min-height: 0;
+}
