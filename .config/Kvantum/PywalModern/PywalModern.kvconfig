@@ -1,0 +1,40 @@
+[General]
+theme=KvDark
+# This enables the "glass" look
+translucent_windows=true
+# Blur is handled by Hyprland, but Kvantum needs to allow it
+blur_helper=true
+
+[GeneralColors]
+# Backgrounds: Dark and slightly transparent
+window.color=#1a1b26
+base.color=#24283b
+alt.base.color=#1a1b26
+button.color=#414868
+
+# Text: Clean White for Dark Themes
+# Using #eeeeee instead of pure white to prevent eye strain
+text.color=#eeeeee
+window.text.color=#eeeeee
+button.text.color=#eeeeee
+highlight.text.color=#ffffff
+
+# Accent: Using a Neutral Blue-ish (Pywal will often override this if set in qt6ct)
+highlight.color=#7aa2f7
+inactive.highlight.color=#414868
+link.color=#7dcfff
+
+# URL Bar Fix: Dark text for light input fields
+base.text.color=#eeeeee
+
+[Config]
+# Modern UI Tweaks
+# Removes the old-school 3D borders
+flat_buttons=true
+bold_active_tab=true
+# Makes the URL bar (LineEdit) look like a modern pill
+lineedit_border_width=1
+# Rounds the corners of buttons and windows
+round_corners=8
+# Reduces padding for a "compact" modern feel
+view_line_spacing=4

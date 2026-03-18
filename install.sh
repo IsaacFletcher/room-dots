@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo pacman -S python-pywal sddm git base-devel hyprland alacritty xdg-desktop-portal-hyprland waybar swaync rofi qt6ct qt5ct dolphin kvantum cliphist
+sudo pacman -S python-gobject python-pywal sddm git base-devel hyprland alacritty xdg-desktop-portal-hyprland waybar swaync rofi qt6ct qt5ct dolphin kvantum cliphist
 
 sudo systemctl enable sddm
 if pacman -Qi "paru" > /dev/null; then
