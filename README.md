@@ -23,6 +23,7 @@ Arch Linux:
 
 ```
 git clone https://github.com/isaacfletcher/room-dots.git
+cd room-dots
 chmod +x install.sh
 ./install.sh
 ```

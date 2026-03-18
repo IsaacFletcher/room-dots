@@ -10,6 +10,7 @@ else
   cd /tmp/paru
   makepkg -si
   echo "PARU installed, Creating Directories"
+fi
 
 # Create Directories
 
