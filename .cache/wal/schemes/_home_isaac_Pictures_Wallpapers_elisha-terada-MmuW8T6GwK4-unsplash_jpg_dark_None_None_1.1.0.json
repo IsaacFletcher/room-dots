@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/isaac/Pictures/Wallpapers/elisha-terada-MmuW8T6GwK4-unsplash.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0c0909",
+        "foreground": "#cedbe3",
+        "cursor": "#cedbe3"
+    },
+    "colors": {
+        "color0": "#0c0909",
+        "color1": "#4A7890",
+        "color2": "#5F97AF",
+        "color3": "#579BB4",
+        "color4": "#88A7BA",
+        "color5": "#90B5CA",
+        "color6": "#A6BCCE",
+        "color7": "#cedbe3",
+        "color8": "#90999e",
+        "color9": "#4A7890",
+        "color10": "#5F97AF",
+        "color11": "#579BB4",
+        "color12": "#88A7BA",
+        "color13": "#90B5CA",
+        "color14": "#A6BCCE",
+        "color15": "#cedbe3"
+    }
+}

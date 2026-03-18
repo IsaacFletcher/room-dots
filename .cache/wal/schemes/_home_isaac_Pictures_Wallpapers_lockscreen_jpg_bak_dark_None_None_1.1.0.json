@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/isaac/Pictures/Wallpapers/lockscreen.jpg.bak",
+    "alpha": "100",
+    "special": {
+        "background": "#000000",
+        "foreground": "#e0dfdf",
+        "cursor": "#e0dfdf"
+    },
+    "colors": {
+        "color0": "#000000",
+        "color1": "#AC3623",
+        "color2": "#AE564A",
+        "color3": "#AC645D",
+        "color4": "#91827D",
+        "color5": "#9E9D9D",
+        "color6": "#CDABA4",
+        "color7": "#e0dfdf",
+        "color8": "#9c9c9c",
+        "color9": "#AC3623",
+        "color10": "#AE564A",
+        "color11": "#AC645D",
+        "color12": "#91827D",
+        "color13": "#9E9D9D",
+        "color14": "#CDABA4",
+        "color15": "#e0dfdf"
+    }
+}

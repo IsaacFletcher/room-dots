@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/isaac/Pictures/Wallpapers/reaper.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0e0f16",
+        "foreground": "#e3c9c0",
+        "cursor": "#e3c9c0"
+    },
+    "colors": {
+        "color0": "#0e0f16",
+        "color1": "#956C6F",
+        "color2": "#C2757E",
+        "color3": "#9A8C78",
+        "color4": "#E39A7E",
+        "color5": "#9E7785",
+        "color6": "#A89C89",
+        "color7": "#e3c9c0",
+        "color8": "#9e8c86",
+        "color9": "#956C6F",
+        "color10": "#C2757E",
+        "color11": "#9A8C78",
+        "color12": "#E39A7E",
+        "color13": "#9E7785",
+        "color14": "#A89C89",
+        "color15": "#e3c9c0"
+    }
+}

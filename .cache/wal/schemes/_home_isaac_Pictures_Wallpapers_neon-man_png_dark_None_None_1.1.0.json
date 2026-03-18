@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/isaac/Pictures/Wallpapers/neon-man.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0e0f16",
+        "foreground": "#ecbfc2",
+        "cursor": "#ecbfc2"
+    },
+    "colors": {
+        "color0": "#0e0f16",
+        "color1": "#74926F",
+        "color2": "#B79979",
+        "color3": "#68718C",
+        "color4": "#B57888",
+        "color5": "#77A5BC",
+        "color6": "#A3B9B9",
+        "color7": "#ecbfc2",
+        "color8": "#a58587",
+        "color9": "#74926F",
+        "color10": "#B79979",
+        "color11": "#68718C",
+        "color12": "#B57888",
+        "color13": "#77A5BC",
+        "color14": "#A3B9B9",
+        "color15": "#ecbfc2"
+    }
+}

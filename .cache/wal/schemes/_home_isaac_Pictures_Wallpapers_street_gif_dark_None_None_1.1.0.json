@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/isaac/Pictures/Wallpapers/street.gif",
+    "alpha": "100",
+    "special": {
+        "background": "#090D1D",
+        "foreground": "#9dafc1",
+        "cursor": "#9dafc1"
+    },
+    "colors": {
+        "color0": "#090D1D",
+        "color1": "#503554",
+        "color2": "#304255",
+        "color3": "#285E66",
+        "color4": "#294971",
+        "color5": "#A87856",
+        "color6": "#316896",
+        "color7": "#9dafc1",
+        "color8": "#6d7a87",
+        "color9": "#503554",
+        "color10": "#304255",
+        "color11": "#285E66",
+        "color12": "#294971",
+        "color13": "#A87856",
+        "color14": "#316896",
+        "color15": "#9dafc1"
+    }
+}

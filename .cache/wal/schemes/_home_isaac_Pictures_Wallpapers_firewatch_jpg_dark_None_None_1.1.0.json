@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/isaac/Pictures/Wallpapers/firewatch.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0a070c",
+        "foreground": "#9197c2",
+        "cursor": "#9197c2"
+    },
+    "colors": {
+        "color0": "#0a070c",
+        "color1": "#482357",
+        "color2": "#692B5D",
+        "color3": "#542965",
+        "color4": "#594958",
+        "color5": "#C62F38",
+        "color6": "#8F315B",
+        "color7": "#9197c2",
+        "color8": "#656987",
+        "color9": "#482357",
+        "color10": "#692B5D",
+        "color11": "#542965",
+        "color12": "#594958",
+        "color13": "#C62F38",
+        "color14": "#8F315B",
+        "color15": "#9197c2"
+    }
+}

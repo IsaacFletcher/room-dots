@@ -1,0 +1,12 @@
+[General]
+theme=pywal
+
+[Colors]
+window.color=#101019
+window.text=#eac8bd
+base.color=#101019
+base.text=#eac8bd
+button.color=#C0717F
+button.text=#eac8bd
+selection.color=#EEA47D
+selection.text=#101019

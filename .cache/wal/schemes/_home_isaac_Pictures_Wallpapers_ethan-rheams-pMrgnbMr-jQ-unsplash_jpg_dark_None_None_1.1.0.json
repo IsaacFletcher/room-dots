@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/isaac/Pictures/Wallpapers/ethan-rheams-pMrgnbMr-jQ-unsplash.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#001018",
+        "foreground": "#d9d3ca",
+        "cursor": "#d9d3ca"
+    },
+    "colors": {
+        "color0": "#001018",
+        "color1": "#707373",
+        "color2": "#7D817D",
+        "color3": "#83837D",
+        "color4": "#928F88",
+        "color5": "#ACA497",
+        "color6": "#B0A799",
+        "color7": "#d9d3ca",
+        "color8": "#97938d",
+        "color9": "#707373",
+        "color10": "#7D817D",
+        "color11": "#83837D",
+        "color12": "#928F88",
+        "color13": "#ACA497",
+        "color14": "#B0A799",
+        "color15": "#d9d3ca"
+    }
+}

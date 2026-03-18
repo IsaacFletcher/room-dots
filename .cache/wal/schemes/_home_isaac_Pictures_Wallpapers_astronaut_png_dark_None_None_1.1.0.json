@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/isaac/Pictures/Wallpapers/astronaut.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0e0f16",
+        "foreground": "#dcd6cd",
+        "cursor": "#dcd6cd"
+    },
+    "colors": {
+        "color0": "#0e0f16",
+        "color1": "#96676E",
+        "color2": "#9F9277",
+        "color3": "#A5778A",
+        "color4": "#738183",
+        "color5": "#9D9B98",
+        "color6": "#E0A093",
+        "color7": "#dcd6cd",
+        "color8": "#9a958f",
+        "color9": "#96676E",
+        "color10": "#9F9277",
+        "color11": "#A5778A",
+        "color12": "#738183",
+        "color13": "#9D9B98",
+        "color14": "#E0A093",
+        "color15": "#dcd6cd"
+    }
+}

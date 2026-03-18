@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/isaac/Pictures/Wallpapers/neon.png"
+let background = "#101019"
+let foreground = "#eac8bd"
+let cursor     = "#eac8bd"
+
+" Colors
+let color0  = "#101019"
+let color1  = "#C0717F"
+let color2  = "#B7836B"
+let color3  = "#EEA47D"
+let color4  = "#C57787"
+let color5  = "#689099"
+let color6  = "#EC8796"
+let color7  = "#eac8bd"
+let color8  = "#a38c84"
+let color9  = "#C0717F"
+let color10 = "#B7836B"
+let color11 = "#EEA47D"
+let color12 = "#C57787"
+let color13 = "#689099"
+let color14 = "#EC8796"
+let color15 = "#eac8bd"

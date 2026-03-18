@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/isaac/Pictures/Wallpapers/crystals.png",
+    "alpha": "100",
+    "special": {
+        "background": "#20222f",
+        "foreground": "#bed1da",
+        "cursor": "#bed1da"
+    },
+    "colors": {
+        "color0": "#20222f",
+        "color1": "#90768C",
+        "color2": "#77869E",
+        "color3": "#7B8FA6",
+        "color4": "#8993AC",
+        "color5": "#929EB3",
+        "color6": "#BFA8AC",
+        "color7": "#bed1da",
+        "color8": "#859298",
+        "color9": "#90768C",
+        "color10": "#77869E",
+        "color11": "#7B8FA6",
+        "color12": "#8993AC",
+        "color13": "#929EB3",
+        "color14": "#BFA8AC",
+        "color15": "#bed1da"
+    }
+}

@@ -1,0 +1,21 @@
+set $wallpaper /home/isaac/Pictures/Wallpapers/neon.png
+
+set $background #101019
+set $foreground #eac8bd
+
+set $color0 #101019
+set $color1 #C0717F
+set $color2 #B7836B
+set $color3 #EEA47D
+set $color4 #C57787
+set $color5 #689099
+set $color6 #EC8796
+set $color7 #eac8bd
+set $color8 #a38c84
+set $color9 #C0717F
+set $color10 #B7836B
+set $color11 #EEA47D
+set $color12 #C57787
+set $color13 #689099
+set $color14 #EC8796
+set $color15 #eac8bd

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/isaac/Pictures/Wallpapers/kaur-kristjan-CpPF4W5PB1c-unsplash.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0b1112",
+        "foreground": "#ccd2ca",
+        "cursor": "#ccd2ca"
+    },
+    "colors": {
+        "color0": "#0b1112",
+        "color1": "#244E29",
+        "color2": "#43422C",
+        "color3": "#5A635B",
+        "color4": "#679557",
+        "color5": "#4E5DAF",
+        "color6": "#958490",
+        "color7": "#ccd2ca",
+        "color8": "#8e938d",
+        "color9": "#244E29",
+        "color10": "#43422C",
+        "color11": "#5A635B",
+        "color12": "#679557",
+        "color13": "#4E5DAF",
+        "color14": "#958490",
+        "color15": "#ccd2ca"
+    }
+}
